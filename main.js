@@ -39,8 +39,8 @@ const translations = {
     aboutDesc: "Nexora Solutions is a forward-thinking technology initiative dedicated to developing practical digital platforms. We blend robust software engineering principles with clean visual interfaces to empower businesses and elevate their operational standards.",
     contactTitle: "Get In Touch",
     contactDesc: "Have a project in mind or want to collaborate? Let's discuss how we can build it together.",
-    contactBtn: "Send an Email",
-    linkedinBtn: "LinkedIn Profile",
+    lblEmail: "Email Us:",
+    lblLinkedin: "LinkedIn:",
     footerCopy: "© 2026 Nexora Solutions. All rights reserved.",
     footerNote: "Nexora Solutions is a concept initiative & showcase portfolio project.",
     langBtn: "عربي"
@@ -85,8 +85,8 @@ const translations = {
     aboutDesc: "نكسورا للحلول التقنية هي مبادرة برمجية تهدف للارتقاء بالحلول الرقمية وتوفير أدوات برمجية متقدمة. نجمع بين هندسة البرمجيات القوية والواجهات الحديثة لتمكين المؤسسات والشركات.",
     contactTitle: "تواصل معنا",
     contactDesc: "هل لديك مشروع أو فكرة تريد تحويلها إلى واقع؟ يسعدنا التواصل معك لبحث سبل التعاون.",
-    contactBtn: "إرسال بريد إلكتروني",
-    linkedinBtn: "ملف لينكد إن",
+    lblEmail: "البريد الإلكتروني:",
+    lblLinkedin: "لينكد إن:",
     footerCopy: "© 2026 نكسورا للحلول التقنية. جميع الحقوق محفوظة.",
     footerNote: "نكسورا للحلول التقنية هي مبادرة برمجية ومشروع استعراضي تعريفي.",
     langBtn: "English"
@@ -158,8 +158,8 @@ document.getElementById('langToggle').addEventListener('click', () => {
   // Contact Section
   document.getElementById('contact-title').textContent = langData.contactTitle;
   document.getElementById('contact-desc').textContent = langData.contactDesc;
-  document.getElementById('contact-btn').textContent = langData.contactBtn;
-  document.getElementById('linkedin-btn').textContent = langData.linkedinBtn;
+  document.getElementById('lbl-email').textContent = langData.lblEmail;
+  document.getElementById('lbl-linkedin').textContent = langData.lblLinkedin;
 
   // Footer Section
   document.getElementById('footer-copy').textContent = langData.footerCopy;

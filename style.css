@@ -224,7 +224,7 @@ h2 {
   color: #475569;
 }
 
-/* Contact Section */
+/* Contact Section Styling */
 .contact {
   text-align: center;
 }
@@ -234,11 +234,40 @@ h2 {
   margin-bottom: 25px;
 }
 
-.contact-links {
+.contact-card-box {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
   display: flex;
+  flex-direction: column;
   gap: 15px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.contact-detail {
+  display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.contact-email, .contact-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-email:hover, .contact-link:hover {
+  text-decoration: underline;
 }
 
 /* Footer */
@@ -272,7 +301,7 @@ footer {
     font-size: 1.8rem;
   }
 
-  .hero-buttons, .contact-links {
+  .hero-buttons {
     flex-direction: column;
     align-items: center;
   }
