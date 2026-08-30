@@ -1,324 +1,147 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexora Solutions | Technology for Growing Businesses</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexora Solutions</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- 1. Navbar -->
-    <header class="navbar">
-        <div class="container nav-container">
-            <div class="logo">
-                <h2>Nexora<span>.</span></h2>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#home" data-en="Home" data-ar="الرئيسية">Home</a></li>
-                    <li><a href="#services" data-en="Services" data-ar="خدماتنا">Services</a></li>
-                    <li><a href="#projects" data-en="Projects" data-ar="مشاريعنا">Projects</a></li>
-                    <li><a href="#about" data-en="About" data-ar="عن الشركة">About</a></li>
-                    <li><a href="#contact" class="btn btn-outline" data-en="Contact Us" data-ar="تواصل معنا">Contact Us</a></li>
-                    <li><button id="lang-toggle" class="lang-btn">عربي</button></li>
-                </ul>
-            </nav>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">Nexora<span>.</span></a>
+      
+      <!-- Toggle Button for Mobile -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" data-i18n="nav_home">Home</a>
+        <a href="#services" data-i18n="nav_services">Services</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#contact" data-i18n="nav_contact">Contact Us</a>
+        <button id="langToggle" class="lang-btn">عربي</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1 data-i18n="hero_title">Technology Solutions for Growing Businesses</h1>
+      <p data-i18n="hero_desc">We design and build digital solutions that help businesses work smarter, operate efficiently, and grow.</p>
+      <div class="hero-buttons">
+        <a href="#services" class="btn btn-primary" data-i18n="btn_explore">Explore Services</a>
+        <a href="#projects" class="btn btn-secondary" data-i18n="btn_view_projects">View Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <h2 data-i18n="why_nexora">Why Nexora?</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3 data-i18n="feat1_title">Business-Focused Solutions</h3>
+          <p data-i18n="feat1_desc">We focus on your actual business needs, creating technical tools that directly increase productivity and growth.</p>
         </div>
-    </header>
-
-    <!-- 2. Hero Section -->
-    <section id="home" class="hero">
-        <div class="container hero-content">
-            <h1 data-en="Technology Solutions for <br><span>Growing Businesses</span>" 
-                data-ar="حلول تقنية متكاملة <br><span>لنمو أعمالك</span>">
-                Technology Solutions for <br><span>Growing Businesses</span>
-            </h1>
-            <p data-en="We design and build digital solutions that help businesses work smarter, operate efficiently, and grow."
-               data-ar="نصمم ونبني حلولاً رقمية تساعد الشركات على العمل بذكاء، رفع الكفاءة، والنمو السريع.">
-                We design and build digital solutions that help businesses work smarter, operate efficiently, and grow.
-            </p>
-            <div class="hero-buttons">
-                <a href="#services" class="btn" data-en="Explore Services" data-ar="استكشف الخدمات">Explore Services</a>
-                <a href="#projects" class="btn btn-outline" data-en="View Projects" data-ar="عرض المشاريع">View Projects</a>
-            </div>
+        <div class="feature-card">
+          <h3 data-i18n="feat2_title">Modern Technology</h3>
+          <p data-i18n="feat2_desc">We build our platforms using clean code and scalable technologies to ensure high performance and reliability.</p>
         </div>
-    </section>
-
-    <!-- 3. Why Nexora Section -->
-    <section class="why-nexora">
-        <div class="container">
-            <h2 class="section-title" data-en="Why Nexora<span>?</span>" data-ar="لماذا نكسورا<span>؟</span>">Why Nexora<span>?</span></h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3 data-en="Business-Focused Solutions" data-ar="حلول مخصصة للأعمال">Business-Focused Solutions</h3>
-                    <p data-en="We focus on your actual business needs, creating technical tools that directly increase productivity and growth."
-                       data-ar="نركز على احتياجات عملك الفعلية ونبني أدوات تقنية ترفع الإنتاجية وتدعم النمو مباشرة.">
-                        We focus on your actual business needs, creating technical tools that directly increase productivity and growth.
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <h3 data-en="Modern Technology" data-ar="تقنيات حديثة">Modern Technology</h3>
-                    <p data-en="We build our platforms using clean code and scalable technologies to ensure high performance and reliability."
-                       data-ar="نبني منصاتنا باستخدام أكواد برمجية نظيفة وتقنيات قابلة للتطوير لضمان الأداء العالي.">
-                        We build our platforms using clean code and scalable technologies to ensure high performance and reliability.
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <h3 data-en="Data-Driven Decisions" data-ar="قرارات مبنية على البيانات">Data-Driven Decisions</h3>
-                    <p data-en="We turn raw business data into actionable visual insights to help you make informed decisions."
-                       data-ar="نحول البيانات إلى تحليلات مرئية وتفصيلية تساعدك على اتخاذ القرارات الصائبة.">
-                        We turn raw business data into actionable visual insights to help you make informed decisions.
-                    </p>
-                </div>
-            </div>
+        <div class="feature-card">
+          <h3 data-i18n="feat3_title">Data-Driven Decisions</h3>
+          <p data-i18n="feat3_desc">We turn raw business data into actionable visual insights to help you make informed decisions.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- 4. Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title" data-en="Our <span>Services</span>" data-ar="خدماتنا <span>الرئيسية</span>">Our <span>Services</span></h2>
-            <p class="section-subtitle" data-en="Practical digital solutions tailored for growing businesses." data-ar="حلول رقمية عملية ومصممة خصيصاً لتلبية تطلعات الشركات الناشئة والمتوسطة.">Practical digital solutions tailored for growing businesses.</p>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="icon">🌐</div>
-                    <h3 data-en="Web Development" data-ar="تطوير المواقع والويب">Web Development</h3>
-                    <p data-en="Building corporate websites, custom web applications, and interactive platforms." data-ar="بناء مواقع الشركات، التطبيقات السحابية المخصصة، والمنصات التفاعلية.">Building corporate websites, custom web applications, and interactive platforms.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon">📱</div>
-                    <h3 data-en="Mobile App Development" data-ar="تطوير تطبيقات الجوال">Mobile App Development</h3>
-                    <p data-en="Designing mobile applications with seamless user experiences across iOS and Android using Flutter." data-ar="تصميم وتطوير تطبيقات جوال متجاوبة لبيئتي iOS و Android باستخدام إطار عمل Flutter.">Designing mobile applications with seamless user experiences across iOS and Android using Flutter.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon">💼</div>
-                    <h3 data-en="Custom Business Software" data-ar="أنظمة إدارة الأعمال">Custom Business Software</h3>
-                    <p data-en="Creating POS systems, inventory management, and custom business management tools." data-ar="تطوير أنظمة نقاط البيع (POS)، إدارة المخزون، وأدوات أتمتة الأعمال الداخلية.">Creating POS systems, inventory management, and custom business management tools.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon">📊</div>
-                    <h3 data-en="Data & Analytics" data-ar="تحليل البيانات والتقارير">Data & Analytics</h3>
-                    <p data-en="Designing business dashboards, sales analytics, and clear visual reports." data-ar="بناء لوحات تحكم تفاعلية لتحليل المبيعات، ومراقبة أداء المؤشرات وتوليد التقارير.">Designing business dashboards, sales analytics, and clear visual reports.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon">🤖</div>
-                    <h3 data-en="AI Solutions" data-ar="حلول الذكاء الاصطناعي">AI Solutions</h3>
-                    <p data-en="Integrating practical AI tools like customer review sentiment analysis and document processing." data-ar="دمج أدوات ذكاء اصطناعي عملية مثل تحليل آراء العملاء وتصنيف المستندات تلقائياً.">Integrating practical AI tools like customer review sentiment analysis and document processing.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon">⚡</div>
-                    <h3 data-en="Business Automation" data-ar="أتمتة العمليات">Business Automation</h3>
-                    <p data-en="Automating repetitive workflows, notifications, and internal data processing." data-ar="أتمتة المهام اليومية المكررة، نظام التنبيهات، وتدفق البيانات بين الأقسام.">Automating repetitive workflows, notifications, and internal data processing.</p>
-                </div>
-            </div>
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2 data-i18n="services_title">Our Services</h2>
+      <p class="section-subtitle" data-i18n="services_subtitle">Practical digital solutions tailored for growing businesses.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3 data-i18n="serv1_title">Custom Web Development</h3>
+          <p data-i18n="serv1_desc">Responsive, fast, and modern web applications built to meet your specific operational requirements.</p>
         </div>
-    </section>
-
-    <!-- 5. Projects & Products Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title" data-en="Featured <span>Projects & Products</span>" data-ar="المشاريع <span>والمنتجات</span>">Featured <span>Projects & Products</span></h2>
-            <p class="section-subtitle" data-en="Real-world applications and functional prototypes built by our team." data-ar="نماذج عمل حقيقية وتطبيقات برمجية تم بناؤها وتطويرها من قبل فريقنا.">Real-world applications and functional prototypes built by our team.</p>
-            
-            <div class="projects-grid">
-                
-                <!-- Project 1: Personal Portfolio (Completed & Live) -->
-                <div class="project-card status-completed">
-                    <div class="project-header">
-                        <div class="badge-group">
-                            <span class="badge badge-success" data-en="🟢 Completed & Live" data-ar="🟢 مكتمل ومنشور">🟢 Completed & Live</span>
-                            <span class="badge" data-en="Web Platform" data-ar="منصة ويب">Web Platform</span>
-                        </div>
-                        <h3 data-en="Developer Portfolio" data-ar="موقع البروفايل الشخصي">Developer Portfolio</h3>
-                    </div>
-                    <div class="project-body">
-                        <p data-en="Personal developer portfolio showcasing academic background, skills, certifications, and software projects with integrated CV download."
-                           data-ar="معرض أعمال شخصي يعرض الخلفية الأكاديمية، المهارات البرمجية، الشهادات، والمشاريع مع إمكانية تحميل السيرة الذاتية.">
-                            Personal developer portfolio showcasing academic background, skills, certifications, and software projects with integrated CV download.
-                        </p>
-                        <div class="tech-tags">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
-                            <span>GitHub Pages</span>
-                        </div>
-                    </div>
-                    <div class="project-footer">
-                        <a href="https://mrwan908.github.io/marwan/" target="_blank" class="project-link" data-en="View Live Demo ↗" data-ar="عرض الموقع الفعلي ↗">View Live Demo ↗</a>
-                    </div>
-                </div>
-
-                <!-- Project 2: NovaShop (In Development) -->
-                <div class="project-card status-progress">
-                    <div class="project-header">
-                        <div class="badge-group">
-                            <span class="badge badge-warning" data-en="🟡 In Development" data-ar="🟡 قيد التطوير">🟡 In Development</span>
-                            <span class="badge" data-en="Mobile App" data-ar="تطبيق جوال">Mobile App</span>
-                        </div>
-                        <h3 data-en="NovaShop Mobile" data-ar="تطبيق NovaShop">NovaShop Mobile</h3>
-                    </div>
-                    <div class="project-body">
-                        <p data-en="Cross-platform e-commerce mobile application featuring modern UI layout, product catalog, cart flows, and seamless navigation."
-                           data-ar="تطبيق متجر إلكتروني متعدد المنصات يتميز بواجهات حديثة، كتالوج للمنتجات، سلة تسوق، وتنقل سلس.">
-                            Cross-platform e-commerce mobile application featuring modern UI layout, product catalog, cart flows, and seamless navigation.
-                        </p>
-                        <div class="tech-tags">
-                            <span>Flutter</span>
-                            <span>Dart</span>
-                            <span>Android SDK</span>
-                            <span>Gradle</span>
-                        </div>
-                    </div>
-                    <div class="project-footer">
-                        <span class="status-text" data-en="Phase: UI & Core Logic Setup" data-ar="المرحلة: بناء الواجهات والمنطق الأساسي">Phase: UI & Core Logic Setup</span>
-                    </div>
-                </div>
-
-                <!-- Project 3: Maqam POS (In Development) -->
-                <div class="project-card status-progress">
-                    <div class="project-header">
-                        <div class="badge-group">
-                            <span class="badge badge-warning" data-en="🟡 In Development" data-ar="🟡 قيد التطوير">🟡 In Development</span>
-                            <span class="badge" data-en="POS System" data-ar="نظام نقاط بيع">POS System</span>
-                        </div>
-                        <h3 data-en="Maqam POS System" data-ar="نظام مقام POS للمقاهي">Maqam POS System</h3>
-                    </div>
-                    <div class="project-body">
-                        <p data-en="Specialized Point of Sale and management system tailored for coffee shops, featuring order building, inventory, and sales tracking."
-                           data-ar="نظام نقاط بيع مخصص لإدارة المقاهي، يشمل إنشاء الطلبات، متابعة المخزون، وتتبع المبيعات اليومية.">
-                            Specialized Point of Sale and management system tailored for coffee shops, featuring order building, inventory, and sales tracking.
-                        </p>
-                        <div class="tech-tags">
-                            <span>Python</span>
-                            <span>Django</span>
-                            <span>SQL</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-                    <div class="project-footer">
-                        <span class="status-text" data-en="Phase: Backend Logic & DB Architecture" data-ar="المرحلة: بناء الخادم وقواعد البيانات">Phase: Backend Logic & DB Architecture</span>
-                    </div>
-                </div>
-
-                <!-- Project 4: Sales Analytics Dashboard (Prototype) -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="badge-group">
-                            <span class="badge badge-info" data-en="🔵 Demo Prototype" data-ar="🔵 نموذج تجريبي">🔵 Demo Prototype</span>
-                            <span class="badge" data-en="Data Analytics" data-ar="تحليل بيانات">Data Analytics</span>
-                        </div>
-                        <h3 data-en="Sales Analytics Dashboard" data-ar="لوحة تحليل المبيعات">Sales Analytics Dashboard</h3>
-                    </div>
-                    <div class="project-body">
-                        <p data-en="Business intelligence dashboard visualizing monthly revenue, order growth rates, and customer trends."
-                           data-ar="لوحة ذكاء أعمال تفاعلية تعرض إجمالي الإيرادات، معدل نمو الطلبات، وتحليلات سلوك العملاء.">
-                            Business intelligence dashboard visualizing monthly revenue, order growth rates, and customer trends.
-                        </p>
-                        <div class="tech-tags">
-                            <span>Python</span>
-                            <span>Pandas</span>
-                            <span>SQL</span>
-                            <span>Charts.js</span>
-                        </div>
-                    </div>
-                    <div class="project-footer">
-                        <span class="status-text" data-en="Phase: Visualization Prototype" data-ar="المرحلة: تصميم المخططات التفاعلية">Phase: Visualization Prototype</span>
-                    </div>
-                </div>
-
-            </div>
+        <div class="service-card">
+          <h3 data-i18n="serv2_title">Business Intelligence & Dashboards</h3>
+          <p data-i18n="serv2_desc">Transforming complex business metrics into clear, real-time dashboards for better leadership decisions.</p>
         </div>
-    </section>
-
-    <!-- 6. About & Team Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title" data-en="About <span>Nexora</span>" data-ar="عن <span>نكسورا</span>">About <span>Nexora</span></h2>
-            <div class="about-content">
-                <p data-en="Nexora Solutions is a fictional technology company created as a collaborative portfolio project. It simulates a modern technology firm to demonstrate our capability to design and build practical, data-driven digital products."
-                   data-ar="نكسورا سوليوشنز هي شركة تقنية افتراضية صممت كمشروع برمجيات احترافي محاكي للشركات الحقيقية لإظهار قدرتنا على بناء منتجات رقمية متكاملة.">
-                    Nexora Solutions is a fictional technology company created as a collaborative portfolio project. It simulates a modern technology firm to demonstrate our capability to design and build practical, data-driven digital products.
-                </p>
-                <div class="mission-vision">
-                    <div class="mv-box">
-                        <h4 data-en="Our Vision" data-ar="رؤيتنا">Our Vision</h4>
-                        <p data-en="To make modern technology accessible and impactful for growing businesses." data-ar="تمكين الشركات الناشئة والمتوسطة من الوصول إلى التقنيات الحديثة وتوظيفها لرفع النمو.">To make modern technology accessible and impactful for growing businesses.</p>
-                    </div>
-                    <div class="mv-box">
-                        <h4 data-en="Our Mission" data-ar="رسالتنا">Our Mission</h4>
-                        <p data-en="To design scalable digital solutions that streamline operations and drive business growth." data-ar="تصميم حلول رقمية قابلة للتطوير تبسط العمليات التشغيلية وتضمن التوسع السلس.">To design scalable digital solutions that streamline operations and drive business growth.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Team Section -->
-            <h3 class="team-title" data-en="The Project Team" data-ar="فريق العمل">The Project Team</h3>
-            <div class="team-grid">
-                <div class="team-card">
-                    <h4>Marwan Ahmad Al-Sheikh</h4>
-                    <span class="role" data-en="Frontend Developer & Project Coordinator" data-ar="مطور واجهات ومنسق المشروع">Frontend Developer & Project Coordinator</span>
-                    <div class="team-link">
-                        <a href="https://mrwan908.github.io/marwan/" target="_blank" class="btn btn-outline btn-sm" data-en="View Profile ↗" data-ar="عرض الملف الشخصي ↗">View Profile ↗</a>
-                    </div>
-                </div>
-            </div>
+        <div class="service-card">
+          <h3 data-i18n="serv3_title">Process Automation & Systems</h3>
+          <p data-i18n="serv3_desc">Designing custom software tools to streamline workflows, reduce errors, and save operational time.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- 7. Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title" data-en="Get in <span>Touch</span>" data-ar="تواصل <span>معنا</span>">Get in <span>Touch</span></h2>
-            <p class="section-subtitle" data-en="Interested in working with us or reviewing our code? Send us a message." data-ar="هل لديك استفسار أو ترغب في مراجعة كود المشروع؟ تواصل معنا مباشرة عبر الوسائل التالية.">Interested in working with us or reviewing our code? Send us a message.</p>
-            
-            <div class="contact-wrapper">
-                <!-- Social & Direct Contact Info -->
-                <div class="contact-info">
-                    <div class="info-item">
-                        <div class="icon">📧</div>
-                        <div>
-                            <h4 data-en="Email" data-ar="البريد الإلكتروني">Email</h4>
-                            <a href="mailto:mrwanalsheekh@gmail.com">mrwanalsheekh@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="icon">🔗</div>
-                        <div>
-                            <h4>LinkedIn</h4>
-                            <a href="https://www.linkedin.com/in/marwanasheekh" target="_blank" data-en="Visit LinkedIn Profile ↗" data-ar="زيارة حساب لينكد إن ↗">Visit LinkedIn Profile ↗</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Contact Form -->
-                <form class="contact-form" onsubmit="event.preventDefault(); alert('Message Sent Successfully (Demo)!');">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required data-en-placeholder="Your Name" data-ar-placeholder="الاسم الكامل">
-                        <input type="email" placeholder="Your Email" required data-en-placeholder="Your Email" data-ar-placeholder="البريد الإلكتروني">
-                    </div>
-                    <input type="text" placeholder="Company Name" data-en-placeholder="Company Name" data-ar-placeholder="اسم الشركة (اختياري)">
-                    <textarea rows="4" placeholder="Your Message" required data-en-placeholder="Your Message" data-ar-placeholder="اكتب رسالتك هنا..."></textarea>
-                    <button type="submit" class="btn" data-en="Send Message" data-ar="إرسال الرسالة">Send Message</button>
-                </form>
-            </div>
+  <!-- Featured Projects -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 data-i18n="projects_title">Featured Projects</h2>
+      <p class="section-subtitle" data-i18n="projects_subtitle">A selection of platforms and solutions built for business impact.</p>
+      <div class="projects-grid">
+        
+        <div class="project-card">
+          <h3 data-i18n="proj1_title">Maqam POS & Inventory System</h3>
+          <p class="project-tech">Tech: C# | .NET | SQL Server</p>
+          <p data-i18n="proj1_desc">A comprehensive point-of-sale and inventory tracking platform tailored for retail and operational workflows.</p>
+          <span class="status-badge" data-i18n="status_in_dev">In Active Development</span>
         </div>
-    </section>
 
-    <!-- 8. Footer Section -->
-    <footer class="footer">
-        <div class="container footer-content">
-            <h3>Nexora<span>.</span></h3>
-            <p data-en="Technology Solutions for Growing Businesses" data-ar="حلول تقنية لمؤسسات تنمو بثبات">Technology Solutions for Growing Businesses</p>
-            <p class="disclaimer" data-en="Disclaimer: Nexora Solutions is a fictional company created as a personal/group portfolio project."
-               data-ar="تنويه: نكسورا سوليوشنز هي شركة تقنية افتراضية تم إنشاؤها كمشروع محاكاة لملف الأعمال الشخصي.">
-                <strong>Disclaimer:</strong> Nexora Solutions is a fictional company created as a personal/group portfolio project.
-            </p>
-            <p class="copyright">&copy; 2026 Nexora Solutions. All rights reserved.</p>
+        <div class="project-card">
+          <h3 data-i18n="proj2_title">Developer Portfolio Platform</h3>
+          <p class="project-tech">Tech: HTML5 | CSS3 | JavaScript</p>
+          <p data-i18n="proj2_desc">A high-performance personal portfolio built with clean architecture and seamless cross-device response.</p>
+          <a href="https://mrwan908.github.io/marwan/" target="_blank" class="project-link" data-i18n="view_live">View Live Project →</a>
         </div>
-    </footer>
 
-    <script src="js/main.js"></script>
+        <div class="project-card">
+          <h3 data-i18n="proj3_title">NovaShop E-Commerce Mobile App</h3>
+          <p class="project-tech">Tech: Java | Android SDK | Firebase</p>
+          <p data-i18n="proj3_desc">A native mobile store application featuring structured product listings and interactive user flows.</p>
+          <span class="status-badge" data-i18n="status_in_dev">In Active Development</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 data-i18n="about_title">About Nexora</h2>
+      <p data-i18n="about_text">Nexora Solutions is a forward-thinking technology initiative dedicated to developing practical digital platforms. We blend robust software engineering principles with clean visual interfaces to empower businesses and elevate their operational standards.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 data-i18n="contact_title">Get In Touch</h2>
+      <p data-i18n="contact_subtitle">Have a project in mind or want to collaborate? Let's discuss how we can build it together.</p>
+      <a href="mailto:contact@nexora.com" class="btn btn-primary" data-i18n="contact_btn">Send an Email</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p data-i18n="footer_rights">&copy; 2026 Nexora Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
