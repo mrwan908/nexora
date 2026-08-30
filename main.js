@@ -1,5 +1,10 @@
 const translations = {
   en: {
+    navHome: "Home",
+    navServices: "Services",
+    navProjects: "Projects",
+    navAbout: "About",
+    navContact: "Contact Us",
     heroTitle: "Technology Solutions for Growing Businesses",
     heroDesc: "We design and build digital solutions that help businesses work smarter, operate efficiently, and grow.",
     btnExplore: "Explore Services",
@@ -35,11 +40,17 @@ const translations = {
     contactTitle: "Get In Touch",
     contactDesc: "Have a project in mind or want to collaborate? Let's discuss how we can build it together.",
     contactBtn: "Send an Email",
+    linkedinBtn: "LinkedIn Profile",
     footerCopy: "© 2026 Nexora Solutions. All rights reserved.",
     footerNote: "Nexora Solutions is a concept initiative & showcase portfolio project.",
     langBtn: "عربي"
   },
   ar: {
+    navHome: "الرئيسية",
+    navServices: "الخدمات",
+    navProjects: "المشاريع",
+    navAbout: "من نحن",
+    navContact: "تواصل معنا",
     heroTitle: "حلول تقنية لتطوير وتنمية الأعمال",
     heroDesc: "نقوم بتصميم وبناء حلول رقمية تساعد الشركات والأعمال على العمل بذكاء، رفع الكفاءة، والنمو المستمر.",
     btnExplore: "استكشف خدماتنا",
@@ -75,6 +86,7 @@ const translations = {
     contactTitle: "تواصل معنا",
     contactDesc: "هل لديك مشروع أو فكرة تريد تحويلها إلى واقع؟ يسعدنا التواصل معك لبحث سبل التعاون.",
     contactBtn: "إرسال بريد إلكتروني",
+    linkedinBtn: "ملف لينكد إن",
     footerCopy: "© 2026 نكسورا للحلول التقنية. جميع الحقوق محفوظة.",
     footerNote: "نكسورا للحلول التقنية هي مبادرة برمجية ومشروع استعراضي تعريفي.",
     langBtn: "English"
@@ -87,19 +99,27 @@ document.getElementById('langToggle').addEventListener('click', () => {
   currentLang = currentLang === 'en' ? 'ar' : 'en';
   const langData = translations[currentLang];
 
-  // Set Language Direction
+  // Adjust Document Direction and Language
   document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
   document.documentElement.lang = currentLang;
 
-  // Change Button Text
+  // Toggle Button Text
   document.getElementById('langToggle').textContent = langData.langBtn;
 
-  // Translate Content
+  // Navigation Links
+  document.getElementById('nav-home').textContent = langData.navHome;
+  document.getElementById('nav-services').textContent = langData.navServices;
+  document.getElementById('nav-projects').textContent = langData.navProjects;
+  document.getElementById('nav-about').textContent = langData.navAbout;
+  document.getElementById('nav-contact').textContent = langData.navContact;
+
+  // Hero Section
   document.getElementById('hero-title').textContent = langData.heroTitle;
   document.getElementById('hero-desc').textContent = langData.heroDesc;
   document.getElementById('btn-explore').textContent = langData.btnExplore;
   document.getElementById('btn-projects').textContent = langData.btnProjects;
   
+  // Why Section
   document.getElementById('why-title').textContent = langData.whyTitle;
   document.getElementById('feat1-title').textContent = langData.feat1Title;
   document.getElementById('feat1-desc').textContent = langData.feat1Desc;
@@ -108,6 +128,7 @@ document.getElementById('langToggle').addEventListener('click', () => {
   document.getElementById('feat3-title').textContent = langData.feat3Title;
   document.getElementById('feat3-desc').textContent = langData.feat3Desc;
 
+  // Services Section
   document.getElementById('services-title').textContent = langData.servicesTitle;
   document.getElementById('services-subtitle').textContent = langData.servicesSubtitle;
   document.getElementById('serv1-title').textContent = langData.serv1Title;
@@ -117,6 +138,7 @@ document.getElementById('langToggle').addEventListener('click', () => {
   document.getElementById('serv3-title').textContent = langData.serv3Title;
   document.getElementById('serv3-desc').textContent = langData.serv3Desc;
 
+  // Projects Section
   document.getElementById('projects-title').textContent = langData.projectsTitle;
   document.getElementById('projects-subtitle').textContent = langData.projectsSubtitle;
   document.getElementById('proj1-title').textContent = langData.proj1Title;
@@ -129,13 +151,17 @@ document.getElementById('langToggle').addEventListener('click', () => {
   document.getElementById('proj3-desc').textContent = langData.proj3Desc;
   document.getElementById('proj3-status').textContent = langData.proj3Status;
 
+  // About Section
   document.getElementById('about-title').textContent = langData.aboutTitle;
   document.getElementById('about-desc').textContent = langData.aboutDesc;
 
+  // Contact Section
   document.getElementById('contact-title').textContent = langData.contactTitle;
   document.getElementById('contact-desc').textContent = langData.contactDesc;
   document.getElementById('contact-btn').textContent = langData.contactBtn;
+  document.getElementById('linkedin-btn').textContent = langData.linkedinBtn;
 
+  // Footer Section
   document.getElementById('footer-copy').textContent = langData.footerCopy;
   document.getElementById('footer-note').textContent = langData.footerNote;
 });

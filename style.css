@@ -1,4 +1,4 @@
-/* General Reset */
+/* Reset & Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ body {
   margin: 0 auto;
 }
 
-/* Header & Nav */
+/* Header & Navbar */
 .navbar {
   background-color: #ffffff;
   border-bottom: 1px solid #e2e8f0;
@@ -32,7 +32,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .logo {
@@ -132,7 +131,7 @@ body {
   background-color: #eff6ff;
 }
 
-/* Sections */
+/* Common Section Styling */
 section {
   padding: 60px 0;
 }
@@ -150,7 +149,7 @@ h2 {
   margin-bottom: 40px;
 }
 
-/* Grids */
+/* Grids & Cards */
 .features-grid, .services-grid, .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -211,7 +210,7 @@ h2 {
   text-decoration: underline;
 }
 
-/* About & Contact */
+/* About Section */
 .about {
   background-color: #ffffff;
   border-top: 1px solid #e2e8f0;
@@ -225,6 +224,7 @@ h2 {
   color: #475569;
 }
 
+/* Contact Section */
 .contact {
   text-align: center;
 }
@@ -232,6 +232,13 @@ h2 {
 .contact p {
   color: #64748b;
   margin-bottom: 25px;
+}
+
+.contact-links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Footer */
@@ -249,29 +256,29 @@ footer {
   margin-top: 8px;
 }
 
-/* Mobile Responsive Adjustments (بدون تخريب التصميم الأصلي) */
+/* Responsiveness */
 @media (max-width: 768px) {
   .nav-container {
     flex-direction: column;
-    gap: 12px;
+    gap: 15px;
   }
-  
+
   .nav-links {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 12px;
   }
 
   .hero h1 {
     font-size: 1.8rem;
   }
 
-  .hero-buttons {
+  .hero-buttons, .contact-links {
     flex-direction: column;
     align-items: center;
   }
 
   .btn {
+    text-align: center;
     width: 100%;
     max-width: 250px;
   }
