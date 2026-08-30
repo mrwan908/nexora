@@ -1,130 +1,141 @@
-// Translation Dictionary
 const translations = {
   en: {
-    nav_home: "Home",
-    nav_services: "Services",
-    nav_projects: "Projects",
-    nav_about: "About",
-    nav_contact: "Contact Us",
-    hero_title: "Technology Solutions for Growing Businesses",
-    hero_desc: "We design and build digital solutions that help businesses work smarter, operate efficiently, and grow.",
-    btn_explore: "Explore Services",
-    btn_view_projects: "View Projects",
-    why_nexora: "Why Nexora?",
-    feat1_title: "Business-Focused Solutions",
-    feat1_desc: "We focus on your actual business needs, creating technical tools that directly increase productivity and growth.",
-    feat2_title: "Modern Technology",
-    feat2_desc: "We build our platforms using clean code and scalable technologies to ensure high performance and reliability.",
-    feat3_title: "Data-Driven Decisions",
-    feat3_desc: "We turn raw business data into actionable visual insights to help you make informed decisions.",
-    services_title: "Our Services",
-    services_subtitle: "Practical digital solutions tailored for growing businesses.",
-    serv1_title: "Custom Web Development",
-    serv1_desc: "Responsive, fast, and modern web applications built to meet your specific operational requirements.",
-    serv2_title: "Business Intelligence & Dashboards",
-    serv2_desc: "Transforming complex business metrics into clear, real-time dashboards for better leadership decisions.",
-    serv3_title: "Process Automation & Systems",
-    serv3_desc: "Designing custom software tools to streamline workflows, reduce errors, and save operational time.",
-    projects_title: "Featured Projects",
-    projects_subtitle: "A selection of platforms and solutions built for business impact.",
-    proj1_title: "Maqam POS & Inventory System",
-    proj1_desc: "A comprehensive point-of-sale and inventory tracking platform tailored for retail and operational workflows.",
-    status_in_dev: "In Active Development",
-    proj2_title: "Developer Portfolio Platform",
-    proj2_desc: "A high-performance personal portfolio built with clean architecture and seamless cross-device response.",
-    view_live: "View Live Project →",
-    proj3_title: "NovaShop E-Commerce Mobile App",
-    proj3_desc: "A native mobile store application featuring structured product listings and interactive user flows.",
-    about_title: "About Nexora",
-    about_text: "Nexora Solutions is a forward-thinking technology initiative dedicated to developing practical digital platforms. We blend robust software engineering principles with clean visual interfaces to empower businesses and elevate their operational standards.",
-    contact_title: "Get In Touch",
-    contact_subtitle: "Have a project in mind or want to collaborate? Let's discuss how we can build it together.",
-    contact_btn: "Send an Email",
-    footer_rights: "© 2026 Nexora Solutions. All rights reserved."
+    heroTitle: "Technology Solutions for Growing Businesses",
+    heroDesc: "We design and build digital solutions that help businesses work smarter, operate efficiently, and grow.",
+    btnExplore: "Explore Services",
+    btnProjects: "View Projects",
+    whyTitle: "Why Nexora?",
+    feat1Title: "Business-Focused Solutions",
+    feat1Desc: "We focus on your actual business needs, creating technical tools that directly increase productivity and growth.",
+    feat2Title: "Modern Technology",
+    feat2Desc: "We build our platforms using clean code and scalable technologies to ensure high performance and reliability.",
+    feat3Title: "Data-Driven Decisions",
+    feat3Desc: "We turn raw business data into actionable visual insights to help you make informed decisions.",
+    servicesTitle: "Our Services",
+    servicesSubtitle: "Practical digital solutions tailored for growing businesses.",
+    serv1Title: "Custom Web Development",
+    serv1Desc: "Responsive, fast, and modern web applications built to meet your specific operational requirements.",
+    serv2Title: "Business Intelligence & Dashboards",
+    serv2Desc: "Transforming complex business metrics into clear, real-time dashboards for better leadership decisions.",
+    serv3Title: "Process Automation & Systems",
+    serv3Desc: "Designing custom software tools to streamline workflows, reduce errors, and save operational time.",
+    projectsTitle: "Featured Projects",
+    projectsSubtitle: "A selection of platforms and solutions built for business impact.",
+    proj1Title: "Maqam POS & Inventory System",
+    proj1Desc: "A comprehensive point-of-sale and inventory tracking platform tailored for retail and operational workflows.",
+    proj1Status: "In Active Development",
+    proj2Title: "Developer Portfolio Platform",
+    proj2Desc: "A high-performance personal portfolio built with clean architecture and seamless cross-device response.",
+    proj2Link: "View Live Project →",
+    proj3Title: "NovaShop E-Commerce Mobile App",
+    proj3Desc: "A native mobile store application featuring structured product listings and interactive user flows.",
+    proj3Status: "In Active Development",
+    aboutTitle: "About Nexora",
+    aboutDesc: "Nexora Solutions is a forward-thinking technology initiative dedicated to developing practical digital platforms. We blend robust software engineering principles with clean visual interfaces to empower businesses and elevate their operational standards.",
+    contactTitle: "Get In Touch",
+    contactDesc: "Have a project in mind or want to collaborate? Let's discuss how we can build it together.",
+    contactBtn: "Send an Email",
+    footerCopy: "© 2026 Nexora Solutions. All rights reserved.",
+    footerNote: "Nexora Solutions is a concept initiative & showcase portfolio project.",
+    langBtn: "عربي"
   },
   ar: {
-    nav_home: "الرئيسية",
-    nav_services: "خدماتنا",
-    nav_projects: "مشاريعنا",
-    nav_about: "من نحن",
-    nav_contact: "تواصل معنا",
-    hero_title: "حلول تقنية لتطوير وتنمية الأعمال",
-    hero_desc: "نقوم بتصميم وبناء حلول رقمية تساعد الشركات والأعمال على العمل بذكاء، رفع الكفاءة، والنمو المستمر.",
-    btn_explore: "استكشف خدماتنا",
-    btn_view_projects: "عرض المشاريع",
-    why_nexora: "لماذا نكسورا؟",
-    feat1_title: "حلول موجهة للأعمال",
-    feat1_desc: "نركز على احتياجات عملك الفعلية عبر تطوير أدوات تقنية تساهم مباشرة في زيادة الإنتاجية.",
-    feat2_title: "تقنيات حديثة",
-    feat2_desc: "نبني منصاتنا باستخدام برمجيات حديثة وشفرات نظيفة لضمان أعلى مستويات الأداء والاعتمادية.",
-    feat3_title: "قرارات مبنية على البيانات",
-    feat3_desc: "نحول بيانات أعمالك المعقدة إلى لوحات تحكم مرئية وسهلة لمساعدتك على اتخاذ قرارات صائبة.",
-    services_title: "خدماتنا",
-    services_subtitle: "حلول رقمية عملية مصممة خصيصاً لدعم نمو الأعمال.",
-    serv1_title: "تطوير مواقع وتطبيقات الويب",
-    serv1_desc: "تطبيقات ويب سريعة، متجاوبة، ومحدثة بأسلوب يلبي كافة متطلبات تشغيل عملك.",
-    serv2_title: "ذكاء الأعمال ولوحات التحكم",
-    serv2_desc: "تحويل مؤشرات الأداء المعقدة إلى لوحات تفاعلية مباشرة لتسهيل اتخاذ القرارات الإدارية.",
-    serv3_title: "أتمتة العمليات والأنظمة",
-    serv3_desc: "تصميم أدوات برمجية خاصة لتقليل الأخطاء البشرية وتسريع وتيرة سير العمل.",
-    projects_title: "مشاريع مميزة",
-    projects_subtitle: "نخبة من المنصات والأنظمة التي تم تطويرها لصنع أثر فعلي.",
-    proj1_title: "نظام مقام لإدارة المبيعات والمخزون",
-    proj1_desc: "منصة متكاملة لنقاط البيع وإدارة المخازن مصممة لخدمة قطاع التجزئة والعمليات التشغيلية.",
-    status_in_dev: "قيد التطوير حالياً",
-    proj2_title: "منصة معرض الأعمال الشخصي",
-    proj2_desc: "موقع تعريفي واحترافي رفيع الأداء يستعرض المشاريع والخبرات بتصميم متجاوب.",
-    view_live: "معاينة المشروع مباشرة ←",
-    proj3_title: "تطبيق نوفاشوب للتجارة الإلكترونية",
-    proj3_desc: "تطبيق جوال متكامل يعرض المنتجات ويوفر تجربة تسوق سلسة وتفاعلية للمستخدمين.",
-    about_title: "عن نكسورا",
-    about_text: "نكسورا للحول التقنية هي مبادرة برمجية تهدف للارتقاء بالحلول الرقمية وتوفير أدوات برمجية متقدمة. نجمع بين هندسة البرمجيات القوية والواجهات الحديثة لتمكين المؤسسات والشركات.",
-    contact_title: "تواصل معنا",
-    contact_subtitle: "هل لديك مشروع أو فكرة تريد تحويلها إلى واقع؟ يسعدنا التواصل معك لبحث سبل التعاون.",
-    contact_btn: "إرسال بريد إلكتروني",
-    footer_rights: "© 2026 نكسورا للحول التقنية. جميع الحقوق محفوظة."
+    heroTitle: "حلول تقنية لتطوير وتنمية الأعمال",
+    heroDesc: "نقوم بتصميم وبناء حلول رقمية تساعد الشركات والأعمال على العمل بذكاء، رفع الكفاءة، والنمو المستمر.",
+    btnExplore: "استكشف خدماتنا",
+    btnProjects: "عرض المشاريع",
+    whyTitle: "لماذا نكسورا؟",
+    feat1Title: "حلول موجهة للأعمال",
+    feat1Desc: "نركز على احتياجات عملك الفعلية عبر تطوير أدوات تقنية تساهم مباشرة في زيادة الإنتاجية والنمو.",
+    feat2Title: "تقنيات حديثة",
+    feat2Desc: "نبني منصاتنا باستخدام برمجيات حديثة وشفرات نظيفة لضمان أعلى مستويات الأداء والاعتمادية.",
+    feat3Title: "قرارات مبنية على البيانات",
+    feat3Desc: "نحول بيانات أعمالك إلى لوحات تحكم مرئية وسهلة لمساعدتك على اتخاذ قرارات صائبة.",
+    servicesTitle: "خدماتنا",
+    servicesSubtitle: "حلول رقمية عملية مصممة خصيصاً لدعم نمو الأعمال.",
+    serv1Title: "تطوير مواقع وتطبيقات الويب",
+    serv1Desc: "تطبيقات ويب سريعة، متجاوبة، ومحدثة بأسلوب يلبي كافة متطلبات تشغيل عملك.",
+    serv2Title: "ذكاء الأعمال ولوحات التحكم",
+    serv2Desc: "تحويل مؤشرات الأداء المعقدة إلى لوحات تفاعلية مباشرة لتسهيل اتخاذ القرارات الإدارية.",
+    serv3Title: "أتمتة العمليات والأنظمة",
+    serv3Desc: "تصميم أدوات برمجية خاصة لتقليل الأخطاء البشرية وتسريع وتيرة سير العمل.",
+    projectsTitle: "مشاريع مميزة",
+    projectsSubtitle: "نخبة من المنصات والأنظمة التي تم تطويرها لصنع أثر فعلي.",
+    proj1Title: "نظام مقام لإدارة المبيعات والمخزون",
+    proj1Desc: "منصة متكاملة لنقاط البيع وإدارة المخازن مصممة لخدمة قطاع التجزئة والعمليات التشغيلية.",
+    proj1Status: "قيد التطوير حالياً",
+    proj2Title: "منصة معرض الأعمال الشخصي",
+    proj2Desc: "موقع تعريفي واحترافي رفيع الأداء يستعرض المشاريع والخبرات بتصميم متجاوب.",
+    proj2Link: "معاينة المشروع مباشرة ←",
+    proj3Title: "تطبيق نوفاشوب للتجارة الإلكترونية",
+    proj3Desc: "تطبيق جوال متكامل يعرض المنتجات ويوفر تجربة تسوق سلسة وتفاعلية للمستخدمين.",
+    proj3Status: "قيد التطوير حالياً",
+    aboutTitle: "عن نكسورا",
+    aboutDesc: "نكسورا للحلول التقنية هي مبادرة برمجية تهدف للارتقاء بالحلول الرقمية وتوفير أدوات برمجية متقدمة. نجمع بين هندسة البرمجيات القوية والواجهات الحديثة لتمكين المؤسسات والشركات.",
+    contactTitle: "تواصل معنا",
+    contactDesc: "هل لديك مشروع أو فكرة تريد تحويلها إلى واقع؟ يسعدنا التواصل معك لبحث سبل التعاون.",
+    contactBtn: "إرسال بريد إلكتروني",
+    footerCopy: "© 2026 نكسورا للحلول التقنية. جميع الحقوق محفوظة.",
+    footerNote: "نكسورا للحلول التقنية هي مبادرة برمجية ومشروع استعراضي تعريفي.",
+    langBtn: "English"
   }
 };
 
 let currentLang = 'en';
 
-const langToggleBtn = document.getElementById('langToggle');
-const menuToggle = document.getElementById('menuToggle');
-const navLinks = document.getElementById('navLinks');
+document.getElementById('langToggle').addEventListener('click', () => {
+  currentLang = currentLang === 'en' ? 'ar' : 'en';
+  const langData = translations[currentLang];
 
-// Language Switch Logic
-if (langToggleBtn) {
-  langToggleBtn.addEventListener('click', () => {
-    currentLang = currentLang === 'en' ? 'ar' : 'en';
-    
-    // Update HTML dir and lang attributes
-    document.documentElement.lang = currentLang;
-    document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
-    
-    // Toggle Button Text
-    langToggleBtn.textContent = currentLang === 'en' ? 'عربي' : 'English';
-    
-    // Update All Elements
-    const elements = document.querySelectorAll('[data-i18n]');
-    elements.forEach(el => {
-      const key = el.getAttribute('data-i18n');
-      if (translations[currentLang][key]) {
-        el.textContent = translations[currentLang][key];
-      }
-    });
-  });
-}
+  // Set Language Direction
+  document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+  document.documentElement.lang = currentLang;
 
-// Mobile Menu Toggle Logic
-if (menuToggle && navLinks) {
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
+  // Change Button Text
+  document.getElementById('langToggle').textContent = langData.langBtn;
 
-  // Close mobile menu when clicking any nav link
-  document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('active');
-    });
-  });
-}
+  // Translate Content
+  document.getElementById('hero-title').textContent = langData.heroTitle;
+  document.getElementById('hero-desc').textContent = langData.heroDesc;
+  document.getElementById('btn-explore').textContent = langData.btnExplore;
+  document.getElementById('btn-projects').textContent = langData.btnProjects;
+  
+  document.getElementById('why-title').textContent = langData.whyTitle;
+  document.getElementById('feat1-title').textContent = langData.feat1Title;
+  document.getElementById('feat1-desc').textContent = langData.feat1Desc;
+  document.getElementById('feat2-title').textContent = langData.feat2Title;
+  document.getElementById('feat2-desc').textContent = langData.feat2Desc;
+  document.getElementById('feat3-title').textContent = langData.feat3Title;
+  document.getElementById('feat3-desc').textContent = langData.feat3Desc;
+
+  document.getElementById('services-title').textContent = langData.servicesTitle;
+  document.getElementById('services-subtitle').textContent = langData.servicesSubtitle;
+  document.getElementById('serv1-title').textContent = langData.serv1Title;
+  document.getElementById('serv1-desc').textContent = langData.serv1Desc;
+  document.getElementById('serv2-title').textContent = langData.serv2Title;
+  document.getElementById('serv2-desc').textContent = langData.serv2Desc;
+  document.getElementById('serv3-title').textContent = langData.serv3Title;
+  document.getElementById('serv3-desc').textContent = langData.serv3Desc;
+
+  document.getElementById('projects-title').textContent = langData.projectsTitle;
+  document.getElementById('projects-subtitle').textContent = langData.projectsSubtitle;
+  document.getElementById('proj1-title').textContent = langData.proj1Title;
+  document.getElementById('proj1-desc').textContent = langData.proj1Desc;
+  document.getElementById('proj1-status').textContent = langData.proj1Status;
+  document.getElementById('proj2-title').textContent = langData.proj2Title;
+  document.getElementById('proj2-desc').textContent = langData.proj2Desc;
+  document.getElementById('proj2-link').textContent = langData.proj2Link;
+  document.getElementById('proj3-title').textContent = langData.proj3Title;
+  document.getElementById('proj3-desc').textContent = langData.proj3Desc;
+  document.getElementById('proj3-status').textContent = langData.proj3Status;
+
+  document.getElementById('about-title').textContent = langData.aboutTitle;
+  document.getElementById('about-desc').textContent = langData.aboutDesc;
+
+  document.getElementById('contact-title').textContent = langData.contactTitle;
+  document.getElementById('contact-desc').textContent = langData.contactDesc;
+  document.getElementById('contact-btn').textContent = langData.contactBtn;
+
+  document.getElementById('footer-copy').textContent = langData.footerCopy;
+  document.getElementById('footer-note').textContent = langData.footerNote;
+});
